@@ -6,6 +6,7 @@ import { Projects } from "./compoents/Project";
 import { Skills } from "./compoents/Skills";
 import { Services } from "./compoents/Services";
 import Footer from "./compoents/Footer";
+import { Analytics } from "@vercel/analytics/react"
 
 
 
@@ -22,7 +23,7 @@ export default function Home() {
   return (
     <main className="relative bg-black flex justify-content items-center flex-col overflow-hidden mx-auto sm: px-10 px-5 ">
       <div className="max-w-7xl w-full">
-
+    <Analytics/>
       <FloatingNav
      navItems= {nav}/>
       <Hero/>
